@@ -60,7 +60,7 @@ public class platform_manager : MonoBehaviour
         if(groundPlatforms.Count < 3)
         {
             GameObject new_platform = Instantiate(platform);
-            Vector3 platform_pos = new Vector3(2 * width, -height / 2 + platform_window_buffer, 0);
+            Vector3 platform_pos = new Vector3(2 * width, -height / 2 + platform_window_buffer, 1);
             new_platform.transform.position = platform_pos;
             groundPlatforms.Add(new_platform);
             Vector3 platformSize = new
@@ -70,7 +70,7 @@ public class platform_manager : MonoBehaviour
         if (roofPlatforms.Count < 4)
         {
             GameObject new_platform = Instantiate(platform);
-            Vector3 platform_pos = new Vector3(3 * width - width / 2, height / 2 - platform_window_buffer, 0);
+            Vector3 platform_pos = new Vector3(3 * width - width / 2, height / 2 - platform_window_buffer, 1);
             new_platform.transform.position = platform_pos;
             roofPlatforms.Add(new_platform);
             Vector3 platformSize = new
@@ -86,13 +86,13 @@ public class platform_manager : MonoBehaviour
             GameObject new_platform = Instantiate(platform);
             if (i < 3)
             {
-                Vector3 platform_pos = new Vector3(i * width, -height / 2 + platform_window_buffer, 0);
+                Vector3 platform_pos = new Vector3(i * width, -height / 2 + platform_window_buffer, 1);
                 new_platform.transform.position = platform_pos;
                 groundPlatforms.Add(new_platform);
             }
             else
             {
-                Vector3 platform_pos = new Vector3((i - 3) * width - width / 2, height / 2 - platform_window_buffer, 0);
+                Vector3 platform_pos = new Vector3((i - 3) * width - width / 2, height / 2 - platform_window_buffer, 1);
                 new_platform.transform.position = platform_pos;
                 roofPlatforms.Add(new_platform);
             }

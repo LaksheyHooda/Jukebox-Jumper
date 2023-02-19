@@ -12,9 +12,9 @@ public class platform_mover : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.position -= Vector3.left * platform_speed;
-        if (transform.position.x < -100) Destroy(transform.gameObject);
+        if (transform.position.x < -50) Destroy(transform.gameObject);
     }
 }
