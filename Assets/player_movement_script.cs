@@ -54,7 +54,16 @@ public class player_movement_script : MonoBehaviour
         {
             playerRigidBody.gravityScale *= -1;
             gravityDirection *= -1;
+            transform.localScale = new Vector3(1, transform.localScale.y * -1, 1);
             timeRemaining = switchTime;
+            if(transform.localScale.y < 0)
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + 2.41f, transform.position.z);
+            }
+            else
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y - 2.41f, transform.position.z);
+            }
         }
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded)
         {

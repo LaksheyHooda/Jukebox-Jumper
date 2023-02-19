@@ -29,7 +29,7 @@ public class platform_manager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
        check_platforms();
        create_new_platform();
