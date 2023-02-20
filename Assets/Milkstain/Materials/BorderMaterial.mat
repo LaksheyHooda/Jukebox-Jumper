@@ -77,5 +77,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - borderColor: {r: 0.19674799, g: 0.1830765, b: 0.014812142, a: 1}
+    - borderColor: {r: 0.46906346, g: -0.7636664, b: 0.5897125, a: 0.1}
   m_BuildTextureStacks: []
